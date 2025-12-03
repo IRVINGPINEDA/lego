@@ -10,9 +10,5 @@ const connection = mysql.createConnection({
     queueLimit: 0
 });
 
-connection.connect((err) => {
-    if (err) throw err;
-    console.log('Conectado a MySQL');
-});
 
 module.exports = connection;
